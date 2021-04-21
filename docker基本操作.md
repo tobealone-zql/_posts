@@ -76,6 +76,19 @@ docker pull mysql:5.7
 docker run -p 3306:3306 --privileged=true -v /home/docker_data/mysql57/logs:/logs -v /home/docker_data/mysql57/data:/var/lib/mysql -v /home/docker_data/mysql57/config/my.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf -e MYSQL_ROOT_PASSWORD=long55555 -d mysql:5.7
 ````
 
+````
+docker run -p 3306:3306 --privileged=true --name mysql \
+-v /home/app/docker/mysql57/log:/var/log/mysql \
+-v /home/app/docker/mysql57/data:/var/lib/mysql \
+-v /home/app/docker/mysql57/conf:/etc/mysql \
+-e MYSQL_ROOT_PASSWORD=root \
+-d mysql:5.7
+````
+
+
+
+
+
 **8版本**
 
 ````
