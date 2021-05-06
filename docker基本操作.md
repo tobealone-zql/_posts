@@ -186,6 +186,16 @@ docker ps
 - https://blog.csdn.net/L_zsen/article/details/106066269?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.compare&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.compare
 ```
 
+- 安装11版本
+
+````
+docker run -d -p 13920:1521 --name oracle_11g registry.cn-hangzhou.aliyuncs.com/helowin/oracle_11g
+````
+
+
+
+
+
 #### 查看所有容器
 
 ````
