@@ -189,7 +189,10 @@ docker ps
 - 安装11版本
 
 ````
-docker run -d -p 13920:1521 --name oracle_11g registry.cn-hangzhou.aliyuncs.com/helowin/oracle_11g
+docker run  -d --privileged=true   -p 1521:1521 --name oracle_11g registry.cn-hangzhou.aliyuncs.com/helowin/oracle_11g
+
+
+docker run -d --privileged=true  --name oracle_12c -p 13914:1521  -v /home/docker_data/oracle12c:/u01/app/oracle sath89/oracle-12c
 ````
 
 
